@@ -117,5 +117,6 @@ function asignarElemento () {
 asignarAnimal();
 asignarElemento();
 
-alert(`${animalChino}+${elementoChino}+${descripcionAnimal}+${descripcionElemento}`);
+
+alert(`tu zodíaco chino es: ${animalChino} de ${elementoChino}.\n${descripcionAnimal}\n${descripcionElemento}`);
 
