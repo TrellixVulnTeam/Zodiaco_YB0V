@@ -1,3 +1,5 @@
+function signoChino () {
+
 let añoNacimiento = prompt('¿En que año naciste?');
 
 let animalChino = ['Rata','Búfalo','Tigre','Conejo','Dragón','Serpiente','Caballo','Cabra','Mono','Gallo','Perro','Cerdo'];
@@ -113,10 +115,20 @@ function asignarElemento () {
         }
 }
 
-
 asignarAnimal();
 asignarElemento();
 
 
-alert(`tu zodíaco chino es: ${animalChino} de ${elementoChino}.\n${descripcionAnimal}\n${descripcionElemento}`);
+    document.getElementsByClassName('boton').addEventListener('clic', function() { 
+    document.getElementsByClassName('card-text').innerHTML = "animalChino";
+})
 
+
+
+
+
+
+
+// alert(`tu zodíaco chino es: ${animalChino} de ${elementoChino}.\n${descripcionAnimal}\n${descripcionElemento}`);
+
+} 
