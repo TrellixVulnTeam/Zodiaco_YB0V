@@ -123,6 +123,19 @@ function asignarImg () {
     }
 }
 
+let imgAnimalElemento
+
+function crearImg () {
+    imgAnimalElemento = `${animalChino}${elementoChino}`;
+    document.getElementsByClassName('imgsigno')[0].src = "img/" + imgAnimalElemento + ".png";
+
+}
+
+
+
+
+
+
 
 
 
@@ -130,6 +143,9 @@ function asignarImg () {
 asignarAnimal();
 asignarElemento();
 asignarImg();
+crearImg();
+console.log(imgAnimalElemento);
+
 
 
 
