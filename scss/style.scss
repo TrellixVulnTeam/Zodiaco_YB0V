@@ -65,11 +65,10 @@ body {
 
 }
 
-
+.imgSigno, .contenedorSigno {
+  visibility: hidden;
+}
 
 .card-title {
   font-weight: bold;
 }
-// .card-body, .card-img-top {
-//   background-color: #333;
-// }

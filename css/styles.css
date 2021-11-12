@@ -63,5 +63,8 @@ body {
 .spacer {
   padding-top: 50px; }
 
+.imgSigno, .contenedorSigno {
+  visibility: hidden; }
+
 .card-title {
   font-weight: bold; }

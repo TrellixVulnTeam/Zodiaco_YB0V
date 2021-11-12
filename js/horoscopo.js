@@ -117,7 +117,8 @@ function asignarElemento () {
 
 function asignarImg () {
     if (animalChino === 'Búfalo' && elementoChino === 'Madera') {
-        document.getElementsByClassName('imgsigno')[0].style.visibility = 'visible';
+        document.getElementsByClassName('imgSigno')[0].style.visibility = 'visible';
+        document.getElementsByClassName('contenedorSigno')[0].style.visibility = 'visible';
         document.getElementsByClassName('card-title')[0].innerHTML = `tu zodíaco chino es: ${animalChino} de ${elementoChino}` ;
         document.getElementsByClassName('card-text')[0].innerHTML = `${descripcionAnimal}\n ${descripcionElemento}` ;
     }
@@ -127,7 +128,7 @@ let imgAnimalElemento
 
 function crearImg () {
     imgAnimalElemento = `${animalChino}${elementoChino}`;
-    document.getElementsByClassName('imgsigno')[0].src = "img/" + imgAnimalElemento + ".png";
+    document.getElementsByClassName('imgSigno')[0].src = "img/" + imgAnimalElemento + ".png";
 
 }
 
