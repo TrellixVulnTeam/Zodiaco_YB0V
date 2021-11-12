@@ -1,4 +1,6 @@
 function signoChino () {
+//
+
 
 let añoNacimiento = prompt('¿En que año naciste?');
 
@@ -11,7 +13,7 @@ function asignarAnimal () {
 
         case 0:
             animalChino = 'Rata';
-            descripcionAnimal = 'La rata es buena para los negocios, popular en situaciones sociales y particularmente adaptable, independientemente de la situación. Las ratas son compatibles con el buey, el dragón y el conejo. También les va bien en años de rata, buey, dragón y conejo.';
+            descripcionAnimal = 'La rata es buena para los negocios, popular en situaciones sociales y particularmente adaptable, independientemente de la situación. Las ratas son compatibles con el búfalo, el dragón y el conejo. También les va bien en años de rata, búfalo, dragón y conejo.';
             break;
 
         case 1 :
@@ -26,7 +28,7 @@ function asignarAnimal () {
 
         case 3 :
             animalChino = 'Conejo';
-            descripcionAnimal = 'Los conejos son nobles y elegantes, y les encanta quedarse en casa y contar su dinero. Se llevan bien con cabras, monos, perros y cerdos jabalíes. Naturalmente, sus mejores años son los de la cabra, el perro, el conejo y el cerdo. Curiosamente, mientras que el conejo se lleva bien con los nacidos en el año de la cabra, el mono, el perro y el cerdo, los nacidos en el año del caballo y el mono también gravitan hacia el conejo.';
+            descripcionAnimal = 'Los conejos son nobles y elegantes, y les encanta quedarse en casa y contar su dinero. Se llevan bien con cabras, monos, perros y cerdos. Naturalmente, sus mejores años son los de la cabra, el perro, el conejo y el cerdo. Curiosamente, mientras que el conejo se lleva bien con los nacidos en el año de la cabra, el mono, el perro y el cerdo, los nacidos en el año del caballo y el mono también gravitan hacia el conejo.';
             break;
 
         case 4:
@@ -115,40 +117,31 @@ function asignarElemento () {
         }
 }
 
-function asignarImg () {
-    if (animalChino === 'Búfalo' && elementoChino === 'Madera') {
-        document.getElementsByClassName('imgSigno')[0].style.visibility = 'visible';
-        document.getElementsByClassName('contenedorSigno')[0].style.visibility = 'visible';
-        document.getElementsByClassName('card-title')[0].innerHTML = `tu zodíaco chino es: ${animalChino} de ${elementoChino}` ;
-        document.getElementsByClassName('card-text')[0].innerHTML = `${descripcionAnimal}\n ${descripcionElemento}` ;
-    }
-}
-
 let imgAnimalElemento
 
 function crearImg () {
     imgAnimalElemento = `${animalChino}${elementoChino}`;
     document.getElementsByClassName('imgSigno')[0].src = "img/" + imgAnimalElemento + ".png";
-
+    document.getElementsByClassName('imgSigno')[0].style.visibility = 'visible';
+    document.getElementsByClassName('contenedorSigno')[0].style.visibility = 'visible';
 }
 
+function crearTxt () { 
+    document.getElementsByClassName('card-title')[0].innerHTML = `tu zodíaco chino es: ${animalChino} de ${elementoChino}` ;
+    document.getElementsByClassName('card-text')[0].innerHTML = `${descripcionAnimal}\n ${descripcionElemento}` ;
 
-
-
-
-
-
-
-
+} 
 
 asignarAnimal();
 asignarElemento();
-asignarImg();
 crearImg();
-console.log(imgAnimalElemento);
+crearTxt();
 
 
 
 
 
+
+//
+//
 } 
