@@ -2,7 +2,7 @@ function signoChino () {
 //
 
 
-let añoNacimiento = prompt('¿En que año naciste?');
+let añoNacimiento = parseInt(document.getElementsByClassName('form-control')[0].value);
 
 let animalChino = ['Rata','Búfalo','Tigre','Conejo','Dragón','Serpiente','Caballo','Cabra','Mono','Gallo','Perro','Cerdo'];
 

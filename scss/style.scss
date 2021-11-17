@@ -4,10 +4,19 @@
 
 
 /* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
+.btn-secondary {
+ background-color:#6f42c1;
+}
+
+.btn-secondary:hover {
+  color: #6f42c1;
+  background-color:floralwhite;
+  border-style: solid;
+  border-width: 3px;
+  border-color:yellow;
+  }
+
 .btn-secondary:focus {
-  color: #333;
   text-shadow: none; /* Prevent inheritance from `body` */
 }
 
@@ -19,10 +28,11 @@
 body {
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  justify-content: center;
 }
 
 .cover-container {
-  max-width: 100%;
+  max-width: 90%;
   height: 100%;
 }
 
@@ -62,13 +72,36 @@ body {
 
 .spacer {
   padding-top: 50px;
+  padding-bottom: 50px;
 
 }
 
-.imgSigno, .contenedorSigno {
+.contenedorSigno {
   visibility: hidden;
+
+}
+
+.imgSigno  {
+  visibility:hidden;
 }
 
 .card-title {
   font-weight: bold;
+}
+
+.contenedorPicker {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  height: 50px;
+  width: 100%;
+  justify-content: center;
+}
+
+.form-control {
+  width: 30%;
+}
+
+.boton {
+  width: 20%;
 }
