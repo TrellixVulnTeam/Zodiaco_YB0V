@@ -1,5 +1,9 @@
+// const botonPrincipal = document.getElementById('botonSigno'); 
+// botonPrincipal.onclick = signoChino;
+
+
 function signoChino () {
-//
+
 
 
 let añoNacimiento = parseInt(document.getElementsByClassName('form-control')[0].value);
@@ -127,7 +131,7 @@ function crearImg () {
 }
 
 function crearTxt () { 
-    document.getElementsByClassName('card-title')[0].innerHTML = `tu zodíaco chino es: ${animalChino} de ${elementoChino}` ;
+    document.getElementsByClassName('card-title')[0].innerHTML = `Tu animal chino es: ${animalChino} de ${elementoChino}` ;
     document.getElementsByClassName('card-text')[0].innerHTML = `${descripcionAnimal}\n ${descripcionElemento}` ;
 
 } 
@@ -142,6 +146,5 @@ crearTxt();
 
 
 
-//
-//
+
 } 
