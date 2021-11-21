@@ -19,6 +19,7 @@
     
     <div class="cover-container d-flex p-3  flex-column">
 
+      <!-- guardando diseños anteriores  -->
       <!-- <header class="mb-auto">
         <div>
           <nav class="nav nav-masthead justify-content-center float-md-end">
@@ -30,17 +31,17 @@
       </header> -->
     
       <main class="px-3 bg">
-        <h1 class="spacer">Horoscopo para el crecimiento personal</h1>
+        <h1 class="spacer">Horóscopo para el crecimiento personal</h1>
         <img src="img/LogoZodiacM.png" alt="">
-          <p class="lead spacer">La astrología china no predice el futuro. En cambio, determina cómo será la energía dominante en un periodo de tiempo y cómo le irá a cada uno de los signos de los animales en esa energía. Basados en las caracteristicas de personalidad de cada animal te entregamos recomendaciones de contendido, entretenimiento y educación para tu crecimiento personal. </p>
+          <p class="lead spacer">La astrología china no predice el futuro. En cambio, determina cómo será la energía dominante en un periodo de tiempo y cómo le irá a cada uno de los signos de los animales en esa energía. Basados en las características de personalidad de cada animal te entregamos recomendaciones de contendido, entretenimiento y educación para tu crecimiento personal. </p>
           <div class="contenedorPicker ">
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-            <a href="#verSigno" class="btn btn-lg btn-secondary fw-bold border-white boton " id="botonSigno" onclick="signoChino()" >Averigua tu Horoscopo</a>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="enterSigno" placeholder="Ingresa tu año de nacimiento">
+            <a href="#verSigno" class="btn btn-lg btn-secondary fw-bold border-white boton " id="botonSigno" >Averigua tu Horoscopo</a>
           </div>
       </main>
       
       
-      
+      <!-- guardando diseños anteriores  -->
       <!-- <div class="card  bg-dark contenedorSigno spacer">
         <a id="verSigno"></a>
         <div class="card" style="width: 30rem;">
@@ -53,9 +54,9 @@
       </div> -->
 
 
-    <div class="spacer">
+    <a id="verSigno"></a>  
+    <div class="spacer2">
       <div class="card contenedorSigno spacer bg-dark">
-        <a id="verSigno"></a>
         <div class="cardContenedor">
           <div class="cardImager">
             <img src="img/RataMadera.png" class="img-fluid rounded-start imgSigno" alt="...">
@@ -93,6 +94,7 @@
 
 
 </body>
+<script src="js/events.js"></script>
 </html>
 
 

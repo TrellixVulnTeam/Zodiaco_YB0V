@@ -1,16 +1,10 @@
-// const botonPrincipal = document.getElementById('botonSigno'); 
-// botonPrincipal.onclick = signoChino;
-
+//
 
 function signoChino () {
 
 
 
-let añoNacimiento = parseInt(document.getElementsByClassName('form-control')[0].value);
-
-let animalChino = ['Rata','Búfalo','Tigre','Conejo','Dragón','Serpiente','Caballo','Cabra','Mono','Gallo','Perro','Cerdo'];
-
-let elementoChino = ['Metal','Agua','Madera','Fuego','Tierra'];
+let añoNacimiento = document.getElementById('enterSigno').value;
 
 function asignarAnimal () {
     switch ((añoNacimiento - 4) % 12) { 
@@ -136,15 +130,43 @@ function crearTxt () {
 
 } 
 
+
 asignarAnimal();
 asignarElemento();
 crearImg();
 crearTxt();
 
+const profile = [
+    {año : añoNacimiento,
+    animal : animalChino,
+    elemento : elementoChino}
+]
+
+
+const guardarLocalStorage = (clave,valor) => {
+    localStorage.setItem(clave,valor)
+} 
+
+guardarLocalStorage('Perfil',JSON.stringify(profile));
+guardarLocalStorage('añoGuardado',añoNacimiento);
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
 } 
