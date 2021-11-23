@@ -13,9 +13,12 @@ const focusañoNacimiento = document.getElementById('enterSigno');
 focusañoNacimiento.addEventListener('focusin', yearSaved); 
 
 function yearSaved() {   
-    
     document.getElementById('enterSigno').value = añoSaved;
-    }
+}
 
-    console.log(añoSaved);
+
+const btnUp = document.getElementById('botonUp');
+btnUp.addEventListener('click',invisibleCard);
+
+
 

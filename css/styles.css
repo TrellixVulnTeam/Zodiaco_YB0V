@@ -123,3 +123,25 @@ body {
 
 .boton {
   width: 20%; }
+
+.botonup {
+  width: 5%;
+  background-color: #721cff;
+  position: fixed;
+  bottom: 5px;
+  right: 10px; }
+
+.botonup:hover {
+  color: #721cff;
+  background-color: floralwhite;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #721cff; }
+
+.botonup:focus {
+  text-shadow: none;
+  color: #721cff;
+  background-color: floralwhite;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #721cff; }

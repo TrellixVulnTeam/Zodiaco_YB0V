@@ -153,20 +153,11 @@ guardarLocalStorage('añoGuardado',añoNacimiento);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //
+
+
 } 
+
+
+
+
