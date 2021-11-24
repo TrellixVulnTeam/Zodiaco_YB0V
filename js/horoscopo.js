@@ -12,6 +12,7 @@ function asignarAnimal () {
         case 0:
             animalChino = 'Rata';
             descripcionAnimal = 'La rata es buena para los negocios, popular en situaciones sociales y particularmente adaptable, independientemente de la situación. Las ratas son compatibles con el búfalo, el dragón y el conejo. También les va bien en años de rata, búfalo, dragón y conejo.';
+            compatibles = ['Búfalo','Dragón','Conejo']
             break;
 
         case 1 :
@@ -130,11 +131,19 @@ function crearTxt () {
 
 } 
 
+function crearCompatibles() {
+document.getElementById('imgCompatible1').src = "img/" + compatibles[0] + ".png";
+document.getElementById('imgCompatible2').src = "img/" + compatibles[1] + ".png"; 
+document.getElementById('imgCompatible3').src = "img/" + compatibles[2] + ".png";     
+}
+
+
 
 asignarAnimal();
 asignarElemento();
 crearImg();
 crearTxt();
+crearCompatibles();
 
 const profile = [
     {año : añoNacimiento,
@@ -150,6 +159,7 @@ const guardarLocalStorage = (clave,valor) => {
 guardarLocalStorage('Perfil',JSON.stringify(profile));
 guardarLocalStorage('añoGuardado',añoNacimiento);
 
+console.log(compatibles);
 
 
 
