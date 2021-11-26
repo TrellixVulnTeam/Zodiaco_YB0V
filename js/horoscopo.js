@@ -13,61 +13,74 @@ function asignarAnimal () {
             animalChino = 'Rata';
             descripcionAnimal = 'La rata es buena para los negocios, popular en situaciones sociales y particularmente adaptable, independientemente de la situación. Las ratas son compatibles con el búfalo, el dragón y el conejo. También les va bien en años de rata, búfalo, dragón y conejo.';
             compatibles = ['Búfalo','Dragón','Conejo']
+            movieGenres = ['Drama','Fantasy','Comedy']
             break;
 
         case 1 :
             animalChino = 'Búfalo';
             descripcionAnimal = 'El búfalo es sencillo y directo en interacciones con los demás. También son conservadores y trabajan duro. Son compatibles con la rata, la serpiente y el gallo. Les va bien en los años del búfalo, la rata, la serpiente y el gallo.';
+            compatibles = ['Rata','Serpiente','Gallo']
+            movieGenres = ['Drama','Scifi','Documentary']
             break;
 
         case 2:
             animalChino = 'Tigre';
             descripcionAnimal = 'Los nacidos en este año son seguros e independientes. También pueden ser un poco pedantes y ambiciosos. Son compatibles con el dragón, el caballo y el cerdo. Sus años felices son los años del tigre, el dragón, el caballo y el cerdo.';
+            compatibles = ['Dragón','Caballo','Cerdo']
             break;
 
         case 3 :
             animalChino = 'Conejo';
             descripcionAnimal = 'Los conejos son nobles y elegantes, y les encanta quedarse en casa y contar su dinero. Se llevan bien con cabras, monos, perros y cerdos. Naturalmente, sus mejores años son los de la cabra, el perro, el conejo y el cerdo. Curiosamente, mientras que el conejo se lleva bien con los nacidos en el año de la cabra, el mono, el perro y el cerdo, los nacidos en el año del caballo y el mono también gravitan hacia el conejo.';
+            compatibles = ['Cabra','Mono','Cerdo']
             break;
 
         case 4:
             animalChino = 'Dragón';
             descripcionAnimal = 'Ético, afortunado, intelectual, con tendencia a la soberbia, es el signo más deseado por los chinos. Los dragones son compatibles con gallo, rata y mono. Naturalmente, sus mejores años son los años del dragón, el gallo, la rata y el mono.';
+            compatibles = ['Gallo','Rata','Mono']
             break;
 
         case 5 :
             animalChino = 'Serpiente';
             descripcionAnimal = 'Astutos más que sabios, les va particularmente bien como autores. Probablemente esto se deba a que tienen un profundo conocimiento de la naturaleza humana. Son compatibles con el dragón y el gallo, y les va bien en el año de la serpiente, el dragón y el gallo.';
+            compatibles = ['Dragón','Gallo','Serpiente']
             break;
 
         case 6:
             animalChino = 'Caballo';
             descripcionAnimal = 'Son populares, tienen mucha energía, tienen muchos amigos (naturalmente) y son tranquilos. Son los mejores amigos del tigre, la oveja y el conejo y, naturalmente, sus mejores años son los años del caballo, la cabra, el tigre y el conejo.';
+            compatibles = ['Tigre','Oveja','Conejo']
             break;
 
         case 7 :
             animalChino = 'Cabra';
             descripcionAnimal = 'Los nacidos en este año son inteligentes y amables. Básicamente, son personas muy agradables y les va bien con el caballo, el conejo y el cerdo. Sus mejores años son el año de la cabra, caballo, conejo y cerdo.';
+            compatibles = ['Caballo','Conejo','Cerdo']
             break;
 
         case 8:
             animalChino = 'Mono';
             descripcionAnimal = 'Son rápidos y versátiles. También tienden a la honestidad y aman la riqueza. Gravitan hacia los nacidos en los años del búfalo y el conejo. Sus mejores años son los años del mono, el búfalo y el conejo.';
+            compatibles = ['mono','Búfalo','Conejo']
             break;
 
         case 9:
             animalChino = 'Gallo';
             descripcionAnimal = 'Conservador, puntual y leal, el gallo tiene valores muy tradicionales. También tienden a ser atractivos como personas y son amigos rápidos de los nacidos en el año del búfalo y la serpiente. Sus mejores años son los años del gallo, el búfalo y la serpiente.';
+            compatibles = ['Gallo','Búfalo','Serpiente']
             break;
 
         case 10:
             animalChino = 'Perro';
             descripcionAnimal = 'Los perros son los mejores amigos del hombre porque aceptan todas nuestras faltas y permanecen leales a pesar de las dificultades y el pecado. Dicho esto, tienen una fuerte veta independiente y se llevan bien con los nacidos en el año del conejo. Florecen durante el año del perro y el año del conejo.';
+            compatibles = ['Caballo','Conejo','Cerdo']
             break;
 
         case 11 :
             animalChino = 'Cerdo';
             descripcionAnimal = 'Los nacidos bajo este animal se sienten naturalmente optimistas de que la vida les traerá cosas buenas. También son considerados con las necesidades de los demás. Sus mejores compañeros son el tigre, el conejo y la cabra. Estos también son sus mejores años.';
+            compatibles = ['Tigre','Conejo','Cabra']
             break;       
             
         default:

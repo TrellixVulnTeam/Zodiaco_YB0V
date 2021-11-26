@@ -186,3 +186,14 @@ body {
   border-width: 3px;
   border-color: #721cff;
 }
+
+.Movies {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.movieCard {
+  width: 100%;
+
+}
