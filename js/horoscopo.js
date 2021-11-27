@@ -1,8 +1,4 @@
-//
-
 function signoChino () {
-
-
 
 let añoNacimiento = document.getElementById('enterSigno').value;
 
@@ -150,8 +146,6 @@ document.getElementById('imgCompatible2').src = "img/" + compatibles[1] + ".png"
 document.getElementById('imgCompatible3').src = "img/" + compatibles[2] + ".png";     
 }
 
-
-
 asignarAnimal();
 asignarElemento();
 crearImg();
@@ -164,7 +158,6 @@ const profile = [
     elemento : elementoChino}
 ]
 
-
 const guardarLocalStorage = (clave,valor) => {
     localStorage.setItem(clave,valor)
 } 
@@ -172,15 +165,4 @@ const guardarLocalStorage = (clave,valor) => {
 guardarLocalStorage('Perfil',JSON.stringify(profile));
 guardarLocalStorage('añoGuardado',añoNacimiento);
 
-console.log(compatibles);
-
-
-
-//
-
-
 } 
-
-
-
-
