@@ -140,14 +140,6 @@ body {
 
 }
 
-.contenedorSigno {
-  visibility:hidden;
-}
-
-.imgSigno  {
-  visibility:hidden;
-}
-
 .card-title {
   font-weight: bold;
 }
@@ -187,7 +179,7 @@ body {
   border-color: #721cff;
 }
 
-.Movies {
+.movies {
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -195,5 +187,8 @@ body {
 
 .movieCard {
   width: 100%;
+}
 
+.moviesCard {
+  width: 30%;
 }

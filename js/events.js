@@ -1,5 +1,6 @@
 const btnSigno = document.getElementById('botonSigno');
 btnSigno.addEventListener('click',signoChino);
+btnSigno.addEventListener('click',crearMovieCards);
 
 const añoSaved = localStorage.getItem('añoGuardado');
   

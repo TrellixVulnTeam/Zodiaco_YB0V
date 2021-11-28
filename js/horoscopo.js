@@ -125,25 +125,32 @@ function asignarElemento () {
         }
 }
 
-let imgAnimalElemento
-
 function crearImg () {
-    imgAnimalElemento = `${animalChino}${elementoChino}`;
-    document.getElementsByClassName('imgSigno')[0].src = "img/" + imgAnimalElemento + ".png";
-    document.getElementsByClassName('imgSigno')[0].style.visibility = 'visible';
-    document.getElementsByClassName('contenedorSigno')[0].style.visibility = 'visible';
+    imgAnimalElemento = `${animalChino}${elementoChino}`;  
+    $('.spacer2').append(`<div class="card contenedorSigno spacer bg-dark">`);
+    $('.contenedorSigno').append(`<div class="cardContenedor">`);
+    $('.cardContenedor').append(`<div class="cardImager">`);
+    $('.cardImager').append(`<img src="img/${imgAnimalElemento}.png" class="img-fluid rounded-start imgSigno" alt="...">`);
+    $('.cardContenedor').append(`<div class="cardTexter">`);
+    $('.cardTexter').append(`<div class="card-body">`);
+    $('.card-body').append(`<h5 class="card-title"></h5><p class="card-text lead"></p>`);
+    $('.card-body').append(`<div class="cardCompatibilizer bg-dark">`);
+    $('.cardCompatibilizer').append(`<p class="lead">Animales compatibles:</p>
+    <div class="cardsCompatibles ">
+    <div class="card bg-dark " ><img src="" id="imgCompatible1"></div>
+    <div class="card bg-dark " ><img src="" id="imgCompatible2"></div>
+    <div class="card bg-dark " ><img src="" id="imgCompatible3"></div>`);
 }
 
 function crearTxt () { 
     document.getElementsByClassName('card-title')[0].innerHTML = `Tu animal chino es: ${animalChino} de ${elementoChino}` ;
     document.getElementsByClassName('card-text')[0].innerHTML = `${descripcionAnimal}\n ${descripcionElemento}` ;
-
 } 
 
 function crearCompatibles() {
-document.getElementById('imgCompatible1').src = "img/" + compatibles[0] + ".png";
-document.getElementById('imgCompatible2').src = "img/" + compatibles[1] + ".png"; 
-document.getElementById('imgCompatible3').src = "img/" + compatibles[2] + ".png";     
+    document.getElementById('imgCompatible1').src = "img/" + compatibles[0] + ".png";
+    document.getElementById('imgCompatible2').src = "img/" + compatibles[1] + ".png"; 
+    document.getElementById('imgCompatible3').src = "img/" + compatibles[2] + ".png";     
 }
 
 asignarAnimal();

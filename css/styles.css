@@ -126,12 +126,6 @@ body {
   padding-top: 50px;
   padding-bottom: 50px; }
 
-.contenedorSigno {
-  visibility: hidden; }
-
-.imgSigno {
-  visibility: hidden; }
-
 .card-title {
   font-weight: bold; }
 
@@ -163,10 +157,13 @@ body {
   border-width: 3px;
   border-color: #721cff; }
 
-.Movies {
+.movies {
   display: flex;
   flex-direction: row;
   gap: 10px; }
 
 .movieCard {
   width: 100%; }
+
+.moviesCard {
+  width: 30%; }
