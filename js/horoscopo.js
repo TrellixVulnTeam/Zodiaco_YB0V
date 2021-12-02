@@ -1,6 +1,7 @@
 function signoChino () {
 
-let añoNacimiento = document.getElementById('enterSigno').value;
+// let añoNacimiento = document.getElementById('enterSigno').value;
+let añoNacimiento = $('#enterSigno').val(); 
 
 function asignarAnimal () {
     switch ((añoNacimiento - 4) % 12) { 
@@ -143,14 +144,15 @@ function crearImg () {
 }
 
 function crearTxt () { 
-    document.getElementsByClassName('card-title')[0].innerHTML = `Tu animal chino es: ${animalChino} de ${elementoChino}` ;
-    document.getElementsByClassName('card-text')[0].innerHTML = `${descripcionAnimal}\n ${descripcionElemento}` ;
+    $('.card-title').text(`Tu animal chino es: ${animalChino} de ${elementoChino}`);
+    $('.card-text').text(`${descripcionAnimal}\n ${descripcionElemento}`);
+
 } 
 
 function crearCompatibles() {
-    document.getElementById('imgCompatible1').src = "img/" + compatibles[0] + ".png";
-    document.getElementById('imgCompatible2').src = "img/" + compatibles[1] + ".png"; 
-    document.getElementById('imgCompatible3').src = "img/" + compatibles[2] + ".png";     
+    $('#imgCompatible1').attr('src','img/' + compatibles[0] + '.png');
+    $('#imgCompatible2').attr('src','img/' + compatibles[1] + '.png');
+    $('#imgCompatible3').attr('src','img/' + compatibles[2] + '.png');
 }
 
 asignarAnimal();
